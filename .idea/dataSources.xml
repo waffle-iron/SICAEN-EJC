@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3614571603">
+    <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="ff47affc-f1c1-459b-ae3d-8e0917537db9">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:./EjcDatabase</jdbc-url>
+    </data-source>
+  </component>
+</project>
