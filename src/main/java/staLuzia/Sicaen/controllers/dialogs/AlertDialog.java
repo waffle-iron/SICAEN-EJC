@@ -12,8 +12,8 @@ public class AlertDialog {
 
     public void showInformationDialog(DialogMessage title, DialogMessage message){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle(title.name());
-        alert.setHeaderText(message.name());
+        alert.setTitle(title.toString());
+        alert.setHeaderText(message.toString());
         //alert.setContentText(content);
 
         alert.showAndWait();
