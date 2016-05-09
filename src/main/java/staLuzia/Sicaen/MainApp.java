@@ -1,6 +1,7 @@
 package staLuzia.Sicaen;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -27,12 +28,12 @@ public class MainApp extends Application{
         stage.setResizable(false);
         stage.show();
 
-    }
-
-    @Override
-    public void stop() throws Exception {
-        super.stop();
-
+        stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            public void handle(WindowEvent event) {
+                MainLayoutController.close();
+                Platform.exit();
+            }
+        });
     }
 
     public static void main(String[] args) {

@@ -24,7 +24,7 @@ public class MainLayoutController implements Initializable{
 
     // VARIÁVEIS LOCAIS
     private List<TextInputControl> itensObrigatorios;
-    private EncontristaRepositorio repositorio = null;
+    private static EncontristaRepositorio repositorio;
     private ComboBoxFill comboBoxFill;
     private String imagePerfilURL;
     private AlertDialog alertDialog;
@@ -69,9 +69,9 @@ public class MainLayoutController implements Initializable{
         this.alertDialog = new AlertDialog();
     }
 
-    public void close(){
-        if(this.repositorio != null){
-            this.repositorio.close();
+    public static void close(){
+        if(repositorio != null){
+            repositorio.close();
         }
     }
 
@@ -115,11 +115,11 @@ public class MainLayoutController implements Initializable{
 
         } catch (FileNotFoundException e) {
             //TODO lançar tela de erro
-            System.out.println("Erro ao criar imagem");
+            alertDialog.showExceptionDialog(DialogMessage.ERROR_EXCEPTION_TITLE, DialogMessage.ERROR_EXCEPTION_HEAD, e);
             e.printStackTrace();
         } catch (IOException e) {
             //TODO lançar tela de erro
-            System.out.println("Oh merda! Erro ao copiar imagem.");
+            alertDialog.showExceptionDialog(DialogMessage.ERROR_EXCEPTION_TITLE, DialogMessage.ERROR_EXCEPTION_HEAD, e);
             e.printStackTrace();
         }
     }

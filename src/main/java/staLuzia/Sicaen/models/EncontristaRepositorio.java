@@ -11,7 +11,9 @@ public class EncontristaRepositorio {
     private EncontristaDAO encontristaDAO;
 
     public EncontristaRepositorio(){
-        this.encontristaDAO = DAOFactory.createDAO();
+        if(encontristaDAO == null){
+            this.encontristaDAO = DAOFactory.createDAO();
+        }
     }
 
     public void add(Encontrista encontrista){
@@ -27,6 +29,8 @@ public class EncontristaRepositorio {
     }
 
     public void close(){
-        this.encontristaDAO.close();
+        if(this.encontristaDAO != null){
+            this.encontristaDAO.close();
+        }
     }
 }

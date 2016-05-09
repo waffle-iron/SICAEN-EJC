@@ -41,7 +41,9 @@ public class EncontristaDAOHibernate implements EncontristaDAO{
     }
 
     public void close(){
-        this.session.close();
+        if(this.session != null){
+            this.session.close();
+        }
     }
 
 }

@@ -30,6 +30,20 @@ public enum DialogMessage {
         }
     },
 
+    ERROR_EXCEPTION_TITLE{
+        @Override
+        public String toString() {
+            return "OPS!";
+        }
+    },
+
+    ERROR_EXCEPTION_HEAD{
+        @Override
+        public String toString() {
+            return "Algo de muito errado aconteceu!";
+        }
+    },
+
     REQUIRED_FIELDS{
         @Override
         public String toString() {

@@ -10,7 +10,7 @@ public class DAOFactory {
     static EncontristaDAOHibernate encontristaDAOHibernate = new EncontristaDAOHibernate();
 
     public static EncontristaDAO createDAO(){
-        encontristaDAOHibernate.setSession(HibernateUtil.getSessionFactory().getCurrentSession());
+        encontristaDAOHibernate.setSession(HibernateUtil.getSessionFactory().openSession());
 
         return encontristaDAOHibernate;
     }

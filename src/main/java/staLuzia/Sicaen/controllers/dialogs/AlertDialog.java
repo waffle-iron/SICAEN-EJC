@@ -22,7 +22,7 @@ public class AlertDialog {
         alert.showAndWait();
     }
 
-    public void showWarningDialog(DialogMessage title, DialogMessage header,DialogMessage content){
+    public void showWarningDialog(DialogMessage title, DialogMessage header, DialogMessage content){
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle(title.toString());
         alert.setHeaderText(header.toString());
@@ -31,14 +31,14 @@ public class AlertDialog {
         alert.showAndWait();
     }
 
-    public void showExceptionDialog(DialogMessage title, DialogMessage message, Exception exception){
+    public void showExceptionDialog(DialogMessage title, DialogMessage head, Exception exception){
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle(title.toString());
-        alert.setHeaderText(message.toString());
+        alert.setHeaderText(head.toString());
 
         Label label = new Label("O erro gerou o segunte relatório:");
 
-        TextArea textArea = new TextArea(exception.toString());
+        TextArea textArea = new TextArea(exception.getMessage());
         textArea.setEditable(false);
         textArea.setWrapText(true);
 
