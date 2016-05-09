@@ -4,57 +4,22 @@ package staLuzia.Sicaen.models.dialogMessages;
  * Created by Henrique on 08/05/2016.
  */
 public enum DialogMessage {
-    ADDED_SUCCESSFULLY_HEAD{
-        @Override
-        public String toString() {
-            return "Encontrista cadastrado com Sucesso!";
-        }
-    },
-    ADDED_SUCCESSFULLY_TITLE{
-        @Override
-        public String toString() {
-            return "CADASTRADO";
-        }
-    },
 
-    ERROR_REGISTER_HEAD{
-        @Override
-        public String toString() {
-            return "Erro ao Cadastrar!";
-        }
-    },
-    ERROR_REGISTER_TITLE{
-        @Override
-        public String toString() {
-            return "ERRO";
-        }
-    },
 
-    ERROR_EXCEPTION_TITLE{
-        @Override
-        public String toString() {
-            return "OPS!";
-        }
-    },
+    ADDED_SUCCESSFULLY_HEAD("Encontrista cadastrado com Sucesso!"),
+    ADDED_SUCCESSFULLY_TITLE("CADASTRADO"),
 
-    ERROR_EXCEPTION_HEAD{
-        @Override
-        public String toString() {
-            return "Algo de muito errado aconteceu!";
-        }
-    },
+    ERROR_REGISTER_HEAD("Erro ao Cadastrar!"),
+    ERROR_REGISTER_TITLE("ERRO"),
 
-    REQUIRED_FIELDS{
-        @Override
-        public String toString() {
-            return "Alguns campos são obrigatórios e precisam ser preenchidos.";
-        }
-    };
+    ERROR_EXCEPTION_HEAD("Algo de muito errado aconteceu!"),
+    ERROR_EXCEPTION_TITLE("OPS");
+
 
     private final String message;
 
-    private DialogMessage(){
-        this.message = null;
+    DialogMessage(String msg){
+        this.message = msg;
     }
 
     public String toString(){
