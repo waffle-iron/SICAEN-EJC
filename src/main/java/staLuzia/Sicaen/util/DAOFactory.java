@@ -1,7 +1,7 @@
 package staLuzia.Sicaen.util;
 
-import staLuzia.Sicaen.models.EncontristaDAO;
-import staLuzia.Sicaen.models.EncontristaDAOHibernate;
+import staLuzia.Sicaen.models.encontrista.EncontristaDAO;
+import staLuzia.Sicaen.models.encontrista.EncontristaDAOHibernate;
 
 /**
  * Created by Henrique on 06/05/2016.

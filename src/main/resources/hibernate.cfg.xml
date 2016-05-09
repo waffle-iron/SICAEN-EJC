@@ -15,6 +15,6 @@
 
     <property name="hibernate.current_session_context_class">thread</property>
 
-    <mapping class="staLuzia.Sicaen.models.Encontrista"/>
+    <mapping class="staLuzia.Sicaen.models.encontrista.Encontrista"/>
   </session-factory>
 </hibernate-configuration>

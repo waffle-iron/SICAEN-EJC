@@ -1,19 +1,17 @@
 package staLuzia.Sicaen.controllers;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.stage.FileChooser;
 import staLuzia.Sicaen.controllers.dialogs.AlertDialog;
 import staLuzia.Sicaen.controllers.requiredFieldsFxml.ComboBoxFill;
-import staLuzia.Sicaen.models.Encontrista;
-import staLuzia.Sicaen.models.EncontristaRepositorio;
+import staLuzia.Sicaen.models.encontrista.Encontrista;
+import staLuzia.Sicaen.models.encontrista.EncontristaRepositorio;
 import staLuzia.Sicaen.models.dialogMessages.DialogMessage;
 
 import java.io.*;
 import java.net.URL;
-import java.nio.Buffer;
 import java.util.List;
 import java.util.ResourceBundle;
 

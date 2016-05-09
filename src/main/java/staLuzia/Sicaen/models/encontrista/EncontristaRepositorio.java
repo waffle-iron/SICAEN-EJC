@@ -1,4 +1,4 @@
-package staLuzia.Sicaen.models;
+package staLuzia.Sicaen.models.encontrista;
 
 import staLuzia.Sicaen.util.DAOFactory;
 
