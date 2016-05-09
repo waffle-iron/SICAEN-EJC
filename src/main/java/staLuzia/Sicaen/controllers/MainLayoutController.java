@@ -3,6 +3,8 @@ package staLuzia.Sicaen.controllers;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import staLuzia.Sicaen.controllers.dialogs.AlertDialog;
 import staLuzia.Sicaen.controllers.requiredFieldsFxml.ComboBoxFill;
@@ -59,6 +61,8 @@ public class MainLayoutController implements Initializable{
     @FXML private CheckBox alimentarNaoCheckBox;
     @FXML private TextArea problemaAlimentarTextArea;
 
+    @FXML private ImageView profileImageView;
+
     // MÉTODOS DA CLASSE
     // Aqui você pode escrever os métodos que não estão diretamente
     // ligados ass chamadas da view
@@ -86,7 +90,6 @@ public class MainLayoutController implements Initializable{
 
         //Religião ComboBox
         this.religiaoComboBox.setItems(comboBoxFill.fillReligionComboBox());
-
     }
 
     // Inicialização da View
@@ -178,7 +181,7 @@ public class MainLayoutController implements Initializable{
         alertDialog.showInformationDialog(DialogMessage.ADDED_SUCCESSFULLY_TITLE, DialogMessage.ADDED_SUCCESSFULLY_HEAD);
     }
 
-    @FXML public void addProfileImage(){
+    @FXML public void openChooserDialog(){
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Selecionar imagem de perfil");
         fileChooser.getExtensionFilters().addAll(
@@ -186,8 +189,9 @@ public class MainLayoutController implements Initializable{
         );
         File file = fileChooser.showOpenDialog(null);
         if(file != null){
+            Image image = new Image(file.toURI().toString());
+            this.profileImageView.setImage(image);
             moveFileToSicaenFilePath(file);
         }
-        System.out.println(this.imagePerfilURL);
     }
 }
