@@ -32,6 +32,7 @@ public class MainApp extends Application{
             public void handle(WindowEvent event) {
                 MainLayoutController.close();
                 Platform.exit();
+                System.exit(0);
             }
         });
     }
