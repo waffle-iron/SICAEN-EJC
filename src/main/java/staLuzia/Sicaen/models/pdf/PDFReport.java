@@ -5,6 +5,8 @@ import com.itextpdf.text.Image;
 import com.itextpdf.text.pdf.PdfContentByte;
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.PdfStamper;
+import staLuzia.Sicaen.controllers.dialogs.AlertDialog;
+import staLuzia.Sicaen.models.dialogMessages.DialogMessage;
 import staLuzia.Sicaen.models.encontrista.Encontrista;
 
 import java.io.ByteArrayOutputStream;
@@ -41,6 +43,7 @@ public class PDFReport {
             }
 
         } catch (IOException e) {
+            AlertDialog.showExceptionDialog(DialogMessage.ERROR_EXCEPTION_TITLE, DialogMessage.ERROR_EXCEPTION_HEAD, e);
             e.printStackTrace();
         }
     }

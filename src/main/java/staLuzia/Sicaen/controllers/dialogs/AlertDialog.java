@@ -14,7 +14,7 @@ public class AlertDialog {
 
     public AlertDialog(){}
 
-    public void showInformationDialog(DialogMessage title, DialogMessage message){
+    public static void showInformationDialog(DialogMessage title, DialogMessage message){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title.toString());
         alert.setHeaderText(message.toString());
@@ -22,7 +22,7 @@ public class AlertDialog {
         alert.showAndWait();
     }
 
-    public void showWarningDialog(DialogMessage title, DialogMessage header, DialogMessage content){
+    public static void showWarningDialog(DialogMessage title, DialogMessage header, DialogMessage content){
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle(title.toString());
         alert.setHeaderText(header.toString());
@@ -31,7 +31,7 @@ public class AlertDialog {
         alert.showAndWait();
     }
 
-    public void showExceptionDialog(DialogMessage title, DialogMessage head, Exception exception){
+    public static void showExceptionDialog(DialogMessage title, DialogMessage head, Exception exception){
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle(title.toString());
         alert.setHeaderText(head.toString());

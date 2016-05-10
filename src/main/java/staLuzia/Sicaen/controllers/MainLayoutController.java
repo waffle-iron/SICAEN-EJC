@@ -27,7 +27,6 @@ public class MainLayoutController implements Initializable{
     private static EncontristaRepositorio repositorio;
     private ComboBoxFill comboBoxFill;
     private String imagePerfilURL;
-    private AlertDialog alertDialog;
 
     // VARIÁVEIS IDENTIFICADORES DO LAYOUT
     @FXML private ComboBox<String> pgtComboBox;
@@ -68,7 +67,6 @@ public class MainLayoutController implements Initializable{
     // ligados ass chamadas da view
     public MainLayoutController(){
         this.comboBoxFill = new ComboBoxFill();
-        this.alertDialog = new AlertDialog();
     }
 
     public static void close(){
@@ -116,11 +114,11 @@ public class MainLayoutController implements Initializable{
 
         } catch (FileNotFoundException e) {
             //TODO lançar tela de erro
-            alertDialog.showExceptionDialog(DialogMessage.ERROR_EXCEPTION_TITLE, DialogMessage.ERROR_EXCEPTION_HEAD, e);
+            AlertDialog.showExceptionDialog(DialogMessage.ERROR_EXCEPTION_TITLE, DialogMessage.ERROR_EXCEPTION_HEAD, e);
             e.printStackTrace();
         } catch (IOException e) {
             //TODO lançar tela de erro
-            alertDialog.showExceptionDialog(DialogMessage.ERROR_EXCEPTION_TITLE, DialogMessage.ERROR_EXCEPTION_HEAD, e);
+            AlertDialog.showExceptionDialog(DialogMessage.ERROR_EXCEPTION_TITLE, DialogMessage.ERROR_EXCEPTION_HEAD, e);
             e.printStackTrace();
         }
     }
@@ -178,7 +176,7 @@ public class MainLayoutController implements Initializable{
         encontrista.setImagemPerfil(this.imagePerfilURL);
         this.repositorio = new EncontristaRepositorio();
         this.repositorio.add(encontrista);
-        alertDialog.showInformationDialog(DialogMessage.ADDED_SUCCESSFULLY_TITLE, DialogMessage.ADDED_SUCCESSFULLY_HEAD);
+        AlertDialog.showInformationDialog(DialogMessage.ADDED_SUCCESSFULLY_TITLE, DialogMessage.ADDED_SUCCESSFULLY_HEAD);
     }
 
     @FXML public void openChooserDialog(){

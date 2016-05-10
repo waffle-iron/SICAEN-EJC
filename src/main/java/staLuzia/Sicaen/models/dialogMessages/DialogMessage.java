@@ -13,8 +13,10 @@ public enum DialogMessage {
     ERROR_REGISTER_TITLE("ERRO"),
 
     ERROR_EXCEPTION_HEAD("Algo de muito errado aconteceu!"),
-    ERROR_EXCEPTION_TITLE("OPS");
+    ERROR_EXCEPTION_TITLE("OPS"),
 
+    ERROR_DOCUMENT_EXCEPTION_TITLE("ERRO"),
+    ERROR_DOCUMENT_EXCEPTION_HEAD("Erro ao gerar Relatorio!");
 
     private final String message;
 
