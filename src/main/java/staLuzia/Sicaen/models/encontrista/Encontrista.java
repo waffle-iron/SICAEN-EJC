@@ -46,7 +46,7 @@ public class Encontrista implements Serializable{
     private String paroquia;
     private String sacramento;
 
-    private String imagemPerfil;
+        private String imagemPerfil;
 
     public Integer getId() {
         return id;
