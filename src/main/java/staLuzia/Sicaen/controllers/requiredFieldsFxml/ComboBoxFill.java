@@ -8,25 +8,32 @@ import javafx.collections.ObservableList;
  */
 public class ComboBoxFill {
 
-    public ObservableList<String> fillRelationshipComboBox(){
+    public static ObservableList<String> fillRelationshipComboBox(){
         ObservableList<String> relacionamento = FXCollections.observableArrayList(
                 "Solteiro","Enrolado","Namorando","Casado"
         );
         return relacionamento;
     }
 
-    public ObservableList<String> fillTshirSizeComboBox(){
+    public static ObservableList<String> fillTshirSizeComboBox(){
         ObservableList<String> size = FXCollections.observableArrayList(
                 "PP","P","M","G","GG"
         );
         return size;
     }
 
-    public ObservableList<String> fillReligionComboBox(){
+    public static ObservableList<String> fillReligionComboBox(){
         ObservableList<String> religion = FXCollections.observableArrayList(
                 "Católico","Evangélico","Espirita","Ateu","Nenhuma"
         );
         return religion;
+    }
+
+    public static ObservableList<String> fillPaymentComboBox(){
+        ObservableList<String> size = FXCollections.observableArrayList(
+                "Pago","Não Pago"
+        );
+        return size;
     }
 
 }

@@ -1,17 +1,12 @@
 package staLuzia.Sicaen.models.pdf;
 
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Image;
-import com.itextpdf.text.pdf.PdfContentByte;
-import com.itextpdf.text.pdf.PdfReader;
-import com.itextpdf.text.pdf.PdfStamper;
-import staLuzia.Sicaen.controllers.dialogs.AlertDialog;
-import staLuzia.Sicaen.models.dialogMessages.DialogMessage;
+import com.itextpdf.text.*;
+import com.itextpdf.text.pdf.PdfWriter;
+import org.apache.poi.util.IOUtils;
 import staLuzia.Sicaen.models.encontrista.Encontrista;
 
-import java.io.ByteArrayOutputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
+import java.net.URL;
 import java.util.List;
 
 /**
@@ -21,76 +16,125 @@ public class PDFReport {
 
     public PDFReport(){}
 
-    public void generateEncontristaReport(List<Encontrista> list) throws DocumentException {
-        try {
-            for(Encontrista enc : list) {
-                PdfReader pdfTemplate = new PdfReader(PDFModelFields.PDF_FILE_MODEL_PATH.toString());
-                FileOutputStream fileOutputStream = new FileOutputStream("relatorio/" +enc.getNome()+".pdf");
-                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                PdfStamper pdfStamper = new PdfStamper(pdfTemplate, fileOutputStream);
-                pdfStamper.setFormFlattening(true);
+    public void generateEncontristaPDFReport(List<Encontrista> listEncontrista) {
 
-                //PUTA QUE PARIU! É MUITO CAMPO PARA PREENCHER
-                //CAMPOS PARA PREENCHER NO PDF
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_NOME.toString(),
-                        enc.getNome().toUpperCase());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_APELIDO.toString(),
-                        enc.getApelido());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_RELACIONAMENTO.toString(),
-                        enc.getRelacionamento());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_DATANASCIMENTO.toString(),
-                        enc.getDataNascimento().toString());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_CELULAR.toString(),
-                        enc.getCelular());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_WHATSAPP.toString(),
-                        enc.getWhatsapp());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_RESPONSAVEL1.toString(),
-                        enc.getNomeResponsavel1());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_RESPONSAVEL1_TELEFONE.toString(),
-                        enc.getTelefoneResponsavel1());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_RESPONSAVEL2.toString(),
-                        enc.getNomeResponsavel2());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_RESPONSAVEL2_TELEFONE.toString(),
-                        enc.getTelefoneResponsavel2());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_EMAIL.toString(),
-                        enc.getEmail());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_TAMANHOCAMISA.toString(),
-                        enc.getTamanhoCamisa().toUpperCase());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_PROBLEMASAUDE.toString(),
-                        enc.getProblemaSaude());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_PROBLEMAALIMENTAR.toString(),
-                        enc.getProblemaAlimentar());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_ENDERECO.toString(),
-                        enc.getEndereco());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_COMPLEMENTO.toString(),
-                        enc.getComplemento());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_CEP.toString(),
-                        enc.getCep());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_BAIRRO.toString(),
-                        enc.getBairro());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_REFERENCIA.toString(),
-                        enc.getReferencia());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_RELIGIAO.toString(),
-                        enc.getReligiao());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_PAROQUIA.toString(),
-                        enc.getParoquia());
-                pdfStamper.getAcroFields().setField(PDFModelFields.ACROFIELD_SACRAMENTO.toString(),
-                        enc.getSacramento());
+        for(Encontrista en : listEncontrista){
+            OutputStream outputStream = null;
 
-                Image image = Image.getInstance(enc.getImagemPerfil());
-                image.scaleAbsolute(4.80f, 5.99f); //Tamanho da imagem no formulario
-                image.setAbsolutePosition(13.70f, 5.40f); //Posição da imagem no formulario
-                PdfContentByte content = pdfStamper.getUnderContent(1); // pega a página principal
-                content.addImage(image); //adiciona a imagem na primeira folha
+            try {
+                //Cria um Documento tamanho A4
+                Document doc = new Document(PageSize.A4);
+                outputStream = new FileOutputStream("relatorio/"+en.getNome().toUpperCase() + ".pdf");
+                PdfWriter.getInstance(doc, outputStream);
+                doc.open();
 
-                pdfStamper.close();
-                pdfTemplate.close();
+                //Escrevendo no pdf
+                /*
+                File logoStLuzia = new File("resources/draw/StaLuziaLogo.jpg");
+                InputStream is = new FileInputStream(logoStLuzia);
+                byte[] logoSntaLuziaImgByte = IOUtils.toByteArray(is);
+                Image logoSntaLuzia = Image.getInstance(logoSntaLuziaImgByte);
+                logoSntaLuzia.setAlignment(Element.ALIGN_LEFT);
+                logoSntaLuzia.scaleAbsolute(1080f, 998f);
+                doc.add(logoSntaLuzia);*/
+
+                Image logoSantaLuzia = Image.getInstance("C:/Users/Henrique/Documents/IntelliJ Projects/Sicaen/src/main/resources/draw/StaLuziaLogo.jpg");
+                logoSantaLuzia.scaleAbsolute(80f, 80f);
+                logoSantaLuzia.setAlignment(Element.ALIGN_RIGHT);
+                doc.add(logoSantaLuzia);
+
+                Paragraph titulo = new Paragraph("Paróquia de Santa Luzia");
+                titulo.setAlignment(Element.ALIGN_CENTER);
+                doc.add(titulo);
+
+                Paragraph section = new Paragraph("EJC");
+                section.setAlignment(Element.ALIGN_CENTER);
+                doc.add(section);
+
+                File img = new File(en.getImagemPerfil());
+                InputStream is = new FileInputStream(img);
+                byte[] imgproff = IOUtils.toByteArray(is);
+                Image profile = Image.getInstance(imgproff);
+                profile.setAbsolutePosition(400f, 650f);
+                doc.add(profile);
+
+                section = new Paragraph("Nome: "+en.getNome());
+                doc.add(section);
+
+                section= new Paragraph("Apelido: "+en.getApelido());
+                doc.add(section);
+                /*
+                section = new Paragraph("Relacionamento: "+en.getRelacionamento());
+                doc.add(section);
+
+                section = new Paragraph("Nascimento: "+en.getDataNascimento().toString());
+                doc.add(section);
+
+                section = new Paragraph("Celular: "+en.getCelular());
+                doc.add(section);
+
+                section = new Paragraph("Whatsapp: "+en.getWhatsapp());
+                doc.add(section);
+
+                section = new Paragraph("E-mail: "+en.getEmail());
+                doc.add(section);
+
+                section = new Paragraph("Endereço: "+en.getEndereco());
+                doc.add(section);
+
+                section = new Paragraph("Bairro: "+en.getBairro());
+                doc.add(section);
+
+                section = new Paragraph("Complemento: "+en.getComplemento());
+                doc.add(section);
+
+                section = new Paragraph("Cep: "+en.getCep());
+                doc.add(section);
+
+                section = new Paragraph("Referencia: "+en.getReferencia());
+                doc.add(section);
+
+                section = new Paragraph("Nome responsavel: "+en.getNomeResponsavel1());
+                doc.add(section);
+
+                section = new Paragraph("Telefone: "+en.getTelefoneResponsavel1());
+                doc.add(section);
+
+                section = new Paragraph("Nome responsavel: "+en.getNomeResponsavel2());
+                doc.add(section);
+
+                section = new Paragraph("Telefone: "+en.getTelefoneResponsavel2());
+                doc.add(section);
+
+                section = new Paragraph("Problema de saúde: "+en.getProblemaSaude());
+                doc.add(section);
+
+                section = new Paragraph("Problema alumentar: "+en.getProblemaAlimentar());
+                doc.add(section);
+
+                section = new Paragraph("Religião: "+en.getReligiao());
+                doc.add(section);
+
+                section = new Paragraph("Paroquia: "+en.getParoquia());
+                doc.add(section);
+
+                section = new Paragraph("Sacramento: "+en.getSacramento());
+                doc.add(section);
+                */
+                doc.close();
+                outputStream.close();
+            }catch (FileNotFoundException fnf){
+                //Erro ao criar arquivo
+                fnf.printStackTrace();
+            } catch (DocumentException e) {
+                //Erro ao criar documento
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
 
-        } catch (IOException e) {
-            AlertDialog.showExceptionDialog(DialogMessage.ERROR_EXCEPTION_TITLE, DialogMessage.ERROR_EXCEPTION_HEAD, e);
-            e.printStackTrace();
         }
+
     }
 
 }

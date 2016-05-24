@@ -35,5 +35,7 @@
     <orderEntry type="library" name="Maven: org.jboss:jandex:1.1.0.Final" level="project" />
     <orderEntry type="library" name="Maven: com.h2database:h2:1.4.191" level="project" />
     <orderEntry type="library" name="Maven: com.itextpdf:itextpdf:5.5.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi:3.14" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
   </component>
 </module>

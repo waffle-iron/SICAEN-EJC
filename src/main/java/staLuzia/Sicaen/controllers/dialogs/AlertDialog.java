@@ -36,7 +36,7 @@ public class AlertDialog {
         alert.setTitle(title.toString());
         alert.setHeaderText(head.toString());
 
-        Label label = new Label("O erro gerou o segunte relatório:");
+        Label label = new Label("O erro gerou o segunte log:");
 
         TextArea textArea = new TextArea(exception.getMessage());
         textArea.setEditable(false);

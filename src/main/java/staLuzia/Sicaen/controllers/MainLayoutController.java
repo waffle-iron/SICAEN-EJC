@@ -1,5 +1,6 @@
 package staLuzia.Sicaen.controllers;
 
+import com.itextpdf.text.DocumentException;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -11,6 +12,7 @@ import staLuzia.Sicaen.controllers.requiredFieldsFxml.ComboBoxFill;
 import staLuzia.Sicaen.models.encontrista.Encontrista;
 import staLuzia.Sicaen.models.encontrista.EncontristaRepositorio;
 import staLuzia.Sicaen.models.dialogMessages.DialogMessage;
+import staLuzia.Sicaen.models.pdf.PDFReport;
 
 import java.io.*;
 import java.net.URL;
@@ -25,7 +27,6 @@ public class MainLayoutController implements Initializable{
     // VARIÁVEIS LOCAIS
     private List<TextInputControl> itensObrigatorios;
     private static EncontristaRepositorio repositorio;
-    private ComboBoxFill comboBoxFill;
     private String imagePerfilURL;
 
     // VARIÁVEIS IDENTIFICADORES DO LAYOUT
@@ -66,7 +67,6 @@ public class MainLayoutController implements Initializable{
     // Aqui você pode escrever os métodos que não estão diretamente
     // ligados ass chamadas da view
     public MainLayoutController(){
-        this.comboBoxFill = new ComboBoxFill();
     }
 
     public static void close(){
@@ -77,17 +77,17 @@ public class MainLayoutController implements Initializable{
 
     //TODO
     public void inicializeComboBox(){
-        //Incrição ComboBox
-        //TODO
-
         //Relacionamento ComboBox
-        this.relacionamentoComboBox.setItems(comboBoxFill.fillRelationshipComboBox());
+        this.relacionamentoComboBox.setItems(ComboBoxFill.fillRelationshipComboBox());
 
         //Tamanho Camisa
-        this.tamanhoCamisaComboBox.setItems(comboBoxFill.fillTshirSizeComboBox());
+        this.tamanhoCamisaComboBox.setItems(ComboBoxFill.fillTshirSizeComboBox());
 
         //Religião ComboBox
-        this.religiaoComboBox.setItems(comboBoxFill.fillReligionComboBox());
+        this.religiaoComboBox.setItems(ComboBoxFill.fillReligionComboBox());
+
+        //Pagamento
+        this.pgtComboBox.setItems(ComboBoxFill.fillPaymentComboBox());
     }
 
     // Inicialização da View
@@ -96,7 +96,7 @@ public class MainLayoutController implements Initializable{
 
     }
 
-    public void moveFileToSicaenFilePath(File fileImage){
+    private void moveFileToSicaenFilePath(File fileImage){
         try {
             File newImage = new File("imageProfile/"+fileImage.getName());
             OutputStream outputStream = new FileOutputStream(newImage);
@@ -121,6 +121,31 @@ public class MainLayoutController implements Initializable{
             AlertDialog.showExceptionDialog(DialogMessage.ERROR_EXCEPTION_TITLE, DialogMessage.ERROR_EXCEPTION_HEAD, e);
             e.printStackTrace();
         }
+    }
+
+    private void clearFields(){
+        this.nomeTextField.setText("");
+        this.apelidoTextField.setText("");
+        this.celularTextField.setText("");
+        this.whatsappCheck.setSelected(false);
+        this.whatsappTextField.setText("");
+        this.responsavel1TextField.setText("");
+        this.telefoneResp1TextField.setText("");
+        this.responsavel2TextField.setText("");
+        this.telefoneResp2TextField.setText("");
+        this.emailTextField.setText("");
+        this.paroquiaTextField.setText("");
+        this.enderecoTextField.setText("");
+        this.cepTextField.setText("");
+        this.complementoTextField.setText("");
+        this.bairroTextField.setText("");
+        this.problemaSaudeTextArea.setText("");
+        this.problemaAlimentarTextArea.setText("");
+        this.pgtComboBox.setValue("Selecione");
+        this.relacionamentoComboBox.setValue("Selecione");
+        this.tamanhoCamisaComboBox.setValue("Selecione");
+        this.religiaoComboBox.setValue("Selecione");
+        this.sacramentoComboBox.setValue("Selecione");
     }
 
     // AÇÕES DA VIEW
@@ -177,6 +202,10 @@ public class MainLayoutController implements Initializable{
         this.repositorio = new EncontristaRepositorio();
         this.repositorio.add(encontrista);
         AlertDialog.showInformationDialog(DialogMessage.ADDED_SUCCESSFULLY_TITLE, DialogMessage.ADDED_SUCCESSFULLY_HEAD);
+        clearFields(); // Limpa todos os campos após acadastro
+        PDFReport pdfReport = new PDFReport();
+        pdfReport.generateEncontristaPDFReport(this.repositorio.list());
+
     }
 
     @FXML public void openChooserDialog(){
