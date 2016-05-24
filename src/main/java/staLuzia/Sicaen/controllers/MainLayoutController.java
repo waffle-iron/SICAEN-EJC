@@ -221,4 +221,43 @@ public class MainLayoutController implements Initializable{
             moveFileToSicaenFilePath(file);
         }
     }
+
+    @FXML public void setSaudeSimCheckBox(){
+        if(saudeNaoCheckBox.isSelected()){
+            saudeNaoCheckBox.setSelected(false);
+        }else{
+            saudeSimCheckBox.setSelected(true);
+        }
+
+        problemaSaudeTextArea.setEditable(true);
+    }
+
+    @FXML public void setSaudeNaoCheckBox(){
+        if(saudeSimCheckBox.isSelected()){
+            saudeSimCheckBox.setSelected(false);
+        }else{
+            saudeNaoCheckBox.setSelected(true);
+        }
+        problemaSaudeTextArea.setText("");
+        problemaSaudeTextArea.setEditable(false);
+    }
+
+    @FXML public void setAlimentarSimCheckBox(){
+        if(alimentarNaoCheckBox.isSelected()){
+            alimentarNaoCheckBox.setSelected(false);
+        }else{
+            alimentarSimCheckBox.setSelected(true);
+        }
+        problemaAlimentarTextArea.setEditable(true);
+    }
+
+    @FXML public void setAlimentarNaoCheckBox(){
+        if(alimentarSimCheckBox.isSelected()){
+            alimentarSimCheckBox.setSelected(false);
+        }else{
+            alimentarNaoCheckBox.setSelected(true);
+        }
+        problemaAlimentarTextArea.setText("");
+        problemaAlimentarTextArea.setEditable(false);
+    }
 }

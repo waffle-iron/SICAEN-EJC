@@ -227,12 +227,12 @@
                                                         <Insets left="10.0" />
                                                     </padding>
                                                 </Label>
-                                                <CheckBox fx:id="saudeSimCheckBox" mnemonicParsing="false" text="Sim" GridPane.rowIndex="1">
+                                                <CheckBox fx:id="saudeSimCheckBox" mnemonicParsing="false" onAction="#setSaudeSimCheckBox" text="Sim" GridPane.rowIndex="1">
                                                     <GridPane.margin>
                                                         <Insets left="10.0" />
                                                     </GridPane.margin>
                                                 </CheckBox>
-                                                <CheckBox fx:id="saudeNaoCheckBox" mnemonicParsing="false" text="Não" GridPane.rowIndex="1">
+                                                <CheckBox fx:id="saudeNaoCheckBox" mnemonicParsing="false" onAction="#setSaudeNaoCheckBox" selected="true" text="Não" GridPane.rowIndex="1">
                                                     <GridPane.margin>
                                                         <Insets left="60.0" />
                                                     </GridPane.margin>
@@ -247,15 +247,15 @@
                                                         <Insets left="10.0" />
                                                     </GridPane.margin>
                                                 </Label>
-                                                <TextArea fx:id="problemaSaudeTextArea" prefHeight="200.0" prefWidth="200.0" promptText="Informe os problemas de saúde caso possua" GridPane.rowIndex="4">
+                                                <TextArea fx:id="problemaSaudeTextArea" editable="false" prefHeight="200.0" prefWidth="200.0" promptText="Informe os problemas de saúde caso possua" GridPane.rowIndex="4">
                                                     <GridPane.margin>
                                                         <Insets left="10.0" />
                                                     </GridPane.margin>
                                                 </TextArea>
-                                                <TextArea fx:id="problemaAlimentarTextArea" prefHeight="200.0" prefWidth="200.0" promptText="Informe os problemas alimentares caso possua" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                                <TextArea fx:id="problemaAlimentarTextArea" editable="false" prefHeight="200.0" prefWidth="200.0" promptText="Informe os problemas alimentares caso possua" GridPane.columnIndex="2" GridPane.rowIndex="4" />
                                                 <Label text="Possue Algum problema Alimentar?" GridPane.columnIndex="2" />
-                                                <CheckBox fx:id="alimentarSimCheckBox" mnemonicParsing="false" text="Sim" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                <CheckBox fx:id="alimentarNaoCheckBox" mnemonicParsing="false" text="Não" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                <CheckBox fx:id="alimentarSimCheckBox" mnemonicParsing="false" onAction="#setAlimentarSimCheckBox" text="Sim" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                <CheckBox fx:id="alimentarNaoCheckBox" mnemonicParsing="false" onAction="#setAlimentarNaoCheckBox" selected="true" text="Não" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                                     <GridPane.margin>
                                                         <Insets left="50.0" />
                                                     </GridPane.margin>
