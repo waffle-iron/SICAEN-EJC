@@ -38,7 +38,7 @@ public class PDFReport {
                 logoSntaLuzia.scaleAbsolute(1080f, 998f);
                 doc.add(logoSntaLuzia);*/
 
-                Image logoSantaLuzia = Image.getInstance("C:/Users/Henrique/Documents/IntelliJ Projects/Sicaen/src/main/resources/draw/StaLuziaLogo.jpg");
+                Image logoSantaLuzia = Image.getInstance("/resources/draw/StaLuziaLogo.jpg");
                 logoSantaLuzia.scaleAbsolute(80f, 80f);
                 logoSantaLuzia.setAlignment(Element.ALIGN_RIGHT);
                 doc.add(logoSantaLuzia);
@@ -51,11 +51,18 @@ public class PDFReport {
                 section.setAlignment(Element.ALIGN_CENTER);
                 doc.add(section);
 
+                //Imagem do perfil
+                /*InputStream profileImageInputStream = en.getImagemPerfil();
+                byte[] imageByteArray = IOUtils.toByteArray(profileImageInputStream);
+                Image profileImage = Image.getInstance(imageByteArray);
+                profileImage.setAbsolutePosition(400f, 650f);
+                doc.add(profileImage);*/
+
                 File img = new File(en.getImagemPerfil());
                 InputStream is = new FileInputStream(img);
                 byte[] imgproff = IOUtils.toByteArray(is);
                 Image profile = Image.getInstance(imgproff);
-                profile.setAbsolutePosition(400f, 650f);
+                profile.setAbsolutePosition(100f, 250f);
                 doc.add(profile);
 
                 section = new Paragraph("Nome: "+en.getNome());

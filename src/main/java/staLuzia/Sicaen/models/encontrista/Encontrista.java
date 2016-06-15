@@ -4,7 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.Serializable;
+import java.sql.Blob;
 import java.util.Date;
 
 /**
@@ -46,7 +49,7 @@ public class Encontrista implements Serializable{
     private String paroquia;
     private String sacramento;
 
-        private String imagemPerfil;
+    private String imagemPerfil;
 
     public Integer getId() {
         return id;

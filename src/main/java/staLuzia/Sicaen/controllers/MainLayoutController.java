@@ -75,7 +75,6 @@ public class MainLayoutController implements Initializable{
         }
     }
 
-    //TODO
     public void inicializeComboBox(){
         //Relacionamento ComboBox
         this.relacionamentoComboBox.setItems(ComboBoxFill.fillRelationshipComboBox());
@@ -110,7 +109,7 @@ public class MainLayoutController implements Initializable{
                 outputStream.write(imageByteArray, 0, length);
             }
 
-            this.imagePerfilURL = (newImage.getParent()+"/"+newImage.getName());
+            this.imagePerfilURL = (newImage.getAbsolutePath());
 
         } catch (FileNotFoundException e) {
             //TODO lançar tela de erro
