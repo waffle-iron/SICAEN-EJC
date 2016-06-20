@@ -26,7 +26,7 @@ public class Encontrista implements Serializable{
     private String nome;
     private String apelido;
     private String relacionamento;
-    private Date dataNascimento;
+    private String dataNascimento;
     private String celular;
     private String whatsapp;
     private String nomeResponsavel1;
@@ -244,11 +244,11 @@ public class Encontrista implements Serializable{
     }
 
 
-    public Date getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

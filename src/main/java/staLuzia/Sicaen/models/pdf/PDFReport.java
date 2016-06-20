@@ -29,19 +29,19 @@ public class PDFReport {
                 doc.open();
 
                 //Escrevendo no pdf
-                /*
-                File logoStLuzia = new File("resources/draw/StaLuziaLogo.jpg");
-                InputStream is = new FileInputStream(logoStLuzia);
-                byte[] logoSntaLuziaImgByte = IOUtils.toByteArray(is);
+                /*File logoStLuzia = new File("draw/StaLuziaLogo.jpg");
+                InputStream inputstream = new FileInputStream(logoStLuzia);
+                byte[] logoSntaLuziaImgByte = IOUtils.toByteArray(inputstream);
                 Image logoSntaLuzia = Image.getInstance(logoSntaLuziaImgByte);
                 logoSntaLuzia.setAlignment(Element.ALIGN_LEFT);
                 logoSntaLuzia.scaleAbsolute(1080f, 998f);
                 doc.add(logoSntaLuzia);*/
 
-                Image logoSantaLuzia = Image.getInstance("/resources/draw/StaLuziaLogo.jpg");
+                /*
+                Image logoSantaLuzia = Image.getInstance("draw/StaLuziaLogo.jpg");
                 logoSantaLuzia.scaleAbsolute(80f, 80f);
                 logoSantaLuzia.setAlignment(Element.ALIGN_RIGHT);
-                doc.add(logoSantaLuzia);
+                doc.add(logoSantaLuzia);*/
 
                 Paragraph titulo = new Paragraph("Paróquia de Santa Luzia");
                 titulo.setAlignment(Element.ALIGN_CENTER);
@@ -62,7 +62,8 @@ public class PDFReport {
                 InputStream is = new FileInputStream(img);
                 byte[] imgproff = IOUtils.toByteArray(is);
                 Image profile = Image.getInstance(imgproff);
-                profile.setAbsolutePosition(100f, 250f);
+                profile.scaleAbsolute(124f, 142f); //Tamanho da imagem
+                profile.setAbsolutePosition(430f, 630f); // posição da imagem
                 doc.add(profile);
 
                 section = new Paragraph("Nome: "+en.getNome());
@@ -70,7 +71,7 @@ public class PDFReport {
 
                 section= new Paragraph("Apelido: "+en.getApelido());
                 doc.add(section);
-                /*
+
                 section = new Paragraph("Relacionamento: "+en.getRelacionamento());
                 doc.add(section);
 
@@ -127,7 +128,7 @@ public class PDFReport {
 
                 section = new Paragraph("Sacramento: "+en.getSacramento());
                 doc.add(section);
-                */
+
                 doc.close();
                 outputStream.close();
             }catch (FileNotFoundException fnf){

@@ -3,6 +3,7 @@ package staLuzia.Sicaen.controllers;
 import com.itextpdf.text.DocumentException;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -155,8 +156,8 @@ public class MainLayoutController implements Initializable{
 
         encontrista.setNome(nomeTextField.getText());
         encontrista.setApelido(apelidoTextField.getText());
-		/*encontrista.setRelacionamento(relacionamentoComboBox.getValue());
-		encontrista.setDataNascimento(dtNascimentoDataPicker.getValue());
+		encontrista.setRelacionamento(relacionamentoComboBox.getValue());
+		encontrista.setDataNascimento(String.valueOf(dtNascimentoDataPicker.getValue()));
 		encontrista.setCelular(celularTextField.getText());
 
 		if(whatsappCheck.isSelected()){
@@ -192,12 +193,11 @@ public class MainLayoutController implements Initializable{
 		//encontrista.setReferencia();
 
 		encontrista.setReligiao(religiaoComboBox.getValue());
-		encontrista.setParoquia(paroquiaComboBox.getValue());
+		encontrista.setParoquia(paroquiaTextField.getText());
 		encontrista.setSacramento(sacramentoComboBox.getValue());
 
-		//encontrista.setImagemPerfil(imagemPerfil);
-		*/
         encontrista.setImagemPerfil(this.imagePerfilURL);
+
         this.repositorio = new EncontristaRepositorio();
         this.repositorio.add(encontrista);
         AlertDialog.showInformationDialog(DialogMessage.ADDED_SUCCESSFULLY_TITLE, DialogMessage.ADDED_SUCCESSFULLY_HEAD);
