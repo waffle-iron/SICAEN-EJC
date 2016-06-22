@@ -22,7 +22,7 @@ public class Encontrista implements Serializable{
     @Id
     @GeneratedValue
     private Integer id;
-    private Boolean pgtInscricao;
+    private String pgtInscricao;
     private String nome;
     private String apelido;
     private String relacionamento;
@@ -59,11 +59,9 @@ public class Encontrista implements Serializable{
         this.id = id;
     }
 
-    public Boolean getPgtInscricao() {
-        return pgtInscricao;
-    }
+    public String getPgtInscricao() {return pgtInscricao; }
 
-    public void setPgtInscricao(Boolean pgtInscricao) {
+    public void setPgtInscricao(String pgtInscricao) {
         this.pgtInscricao = pgtInscricao;
     }
 

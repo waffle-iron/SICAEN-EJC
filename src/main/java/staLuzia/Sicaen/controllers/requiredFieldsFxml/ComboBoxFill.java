@@ -30,10 +30,18 @@ public class ComboBoxFill {
     }
 
     public static ObservableList<String> fillPaymentComboBox(){
-        ObservableList<String> size = FXCollections.observableArrayList(
+        ObservableList<String> pagamento = FXCollections.observableArrayList(
                 "Pago","Não Pago"
         );
-        return size;
+        return pagamento;
+    }
+
+    public static ObservableList<String> fillSacramentComboBox(){
+        ObservableList<String> sacramento = FXCollections.observableArrayList(
+                "Batismo", "Eucaristia", "Crisma", "Matrimônio"
+        );
+
+        return sacramento;
     }
 
 }

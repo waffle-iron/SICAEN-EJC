@@ -47,7 +47,7 @@ public class PDFReport {
                 titulo.setAlignment(Element.ALIGN_CENTER);
                 doc.add(titulo);
 
-                Paragraph section = new Paragraph("EJC");
+                Paragraph section = new Paragraph("VI EJC");
                 section.setAlignment(Element.ALIGN_CENTER);
                 doc.add(section);
 

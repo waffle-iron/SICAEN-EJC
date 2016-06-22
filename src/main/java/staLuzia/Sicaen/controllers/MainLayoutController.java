@@ -17,6 +17,7 @@ import staLuzia.Sicaen.models.pdf.PDFReport;
 
 import java.io.*;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -26,7 +27,6 @@ import java.util.ResourceBundle;
 public class MainLayoutController implements Initializable{
 
     // VARIÁVEIS LOCAIS
-    private List<TextInputControl> itensObrigatorios;
     private static EncontristaRepositorio repositorio;
     private String imagePerfilURL;
 
@@ -88,6 +88,9 @@ public class MainLayoutController implements Initializable{
 
         //Pagamento
         this.pgtComboBox.setItems(ComboBoxFill.fillPaymentComboBox());
+
+        //Sacramento ComboBox
+        this.sacramentoComboBox.setItems(ComboBoxFill.fillSacramentComboBox());
     }
 
     // Inicialização da View
@@ -146,6 +149,9 @@ public class MainLayoutController implements Initializable{
         this.tamanhoCamisaComboBox.setValue("Selecione");
         this.religiaoComboBox.setValue("Selecione");
         this.sacramentoComboBox.setValue("Selecione");
+
+        Image prof = new Image("draw/people.png");
+        this.profileImageView.setImage(prof);
     }
 
     // AÇÕES DA VIEW
@@ -154,6 +160,7 @@ public class MainLayoutController implements Initializable{
     @FXML public void addEncontrista(){
         Encontrista encontrista = new Encontrista();
 
+        encontrista.setPgtInscricao(pgtComboBox.getValue());
         encontrista.setNome(nomeTextField.getText());
         encontrista.setApelido(apelidoTextField.getText());
 		encontrista.setRelacionamento(relacionamentoComboBox.getValue());
@@ -202,9 +209,6 @@ public class MainLayoutController implements Initializable{
         this.repositorio.add(encontrista);
         AlertDialog.showInformationDialog(DialogMessage.ADDED_SUCCESSFULLY_TITLE, DialogMessage.ADDED_SUCCESSFULLY_HEAD);
         clearFields(); // Limpa todos os campos após acadastro
-        PDFReport pdfReport = new PDFReport();
-        pdfReport.generateEncontristaPDFReport(this.repositorio.list());
-
     }
 
     @FXML public void openChooserDialog(){
@@ -259,4 +263,18 @@ public class MainLayoutController implements Initializable{
         problemaAlimentarTextArea.setText("");
         problemaAlimentarTextArea.setEditable(false);
     }
+
+    @FXML public void generatePdfAction(){
+        EncontristaRepositorio repositorio = new EncontristaRepositorio();
+
+        if(repositorio.list().isEmpty() || repositorio == null){
+            AlertDialog.showWarningDialog(DialogMessage.ERROR_DOCUMENT_EXCEPTION_TITLE,DialogMessage.ERROR_DOCUMENT_EXCEPTION_HEAD, null);
+
+        }else{
+            PDFReport pdfReport = new PDFReport();
+            pdfReport.generateEncontristaPDFReport(repositorio.list());
+            AlertDialog.showInformationDialog(DialogMessage.DOCUMENT_GENERATED_TITLE, DialogMessage.DOCUMENT_GENERATED_HEAD);
+        }
+    }
+
 }

@@ -16,7 +16,10 @@ public enum DialogMessage {
     ERROR_EXCEPTION_TITLE("OPS"),
 
     ERROR_DOCUMENT_EXCEPTION_TITLE("ERRO"),
-    ERROR_DOCUMENT_EXCEPTION_HEAD("Erro ao gerar Relatorio!");
+    ERROR_DOCUMENT_EXCEPTION_HEAD("Erro ao gerar Relatorio!"),
+
+    DOCUMENT_GENERATED_TITLE("Relatorios Gerados!"),
+    DOCUMENT_GENERATED_HEAD("Foram gerados os relatórios de todos os encontristas");
 
     private final String message;
 

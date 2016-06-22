@@ -44,12 +44,8 @@
                     <menus>
                         <Menu mnemonicParsing="false" text="File">
                             <items>
+                        <MenuItem mnemonicParsing="false" onAction="#generatePdfAction" text="Gerar PDFs" />
                                 <MenuItem mnemonicParsing="false" text="Close" />
-                            </items>
-                        </Menu>
-                        <Menu mnemonicParsing="false" text="Edit">
-                            <items>
-                                <MenuItem mnemonicParsing="false" text="Delete" />
                             </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="Help">
@@ -159,12 +155,12 @@
                                                         <Insets left="10.0" />
                                                     </GridPane.margin>
                                                 </Label>
-                                                <TextField fx:id="telefoneResp1TextField" editable="false" promptText="(81)990101077" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                                <TextField fx:id="telefoneResp1TextField" promptText="(81)990101077" GridPane.columnIndex="4" GridPane.rowIndex="5">
                                                     <GridPane.margin>
                                                         <Insets right="5.0" />
                                                     </GridPane.margin>
                                                 </TextField>
-                                                <TextField fx:id="telefoneResp2TextField" editable="false" promptText="(81)990101077" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                                <TextField fx:id="telefoneResp2TextField" promptText="(81)990101077" GridPane.columnIndex="4" GridPane.rowIndex="6">
                                                     <GridPane.margin>
                                                         <Insets right="5.0" />
                                                     </GridPane.margin>
