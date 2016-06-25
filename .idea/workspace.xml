@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28e829db-7f23-4b5e-85a5-5c0574eaa995" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/controllers/MainLayoutController.class" afterPath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/controllers/MainLayoutController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/controllers/requiredFieldsFxml/ComboBoxFill.class" afterPath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/controllers/requiredFieldsFxml/ComboBoxFill.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/models/dialogMessages/DialogMessage.class" afterPath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/models/dialogMessages/DialogMessage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/models/encontrista/Encontrista.class" afterPath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/models/encontrista/Encontrista.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/models/pdf/PDFReport.class" afterPath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/models/pdf/PDFReport.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java" afterPath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/requiredFieldsFxml/ComboBoxFill.java" afterPath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/requiredFieldsFxml/ComboBoxFill.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/dialogMessages/DialogMessage.java" afterPath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/dialogMessages/DialogMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/encontrista/Encontrista.java" afterPath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/encontrista/Encontrista.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/pdf/PDFReport.java" afterPath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/pdf/PDFReport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/MainLayout.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/MainLayout.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/fxml/MainLayout.fxml" afterPath="$PROJECT_DIR$/target/classes/fxml/MainLayout.fxml" />
     </list>
     <ignored path="Sicaen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,15 +27,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainLayoutController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainLayoutController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="137" column="48" selection-start-line="137" selection-start-column="48" selection-end-line="137" selection-end-column="48" />
+            <state relative-caret-position="191">
+              <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
               <folding>
                 <element signature="method#close#0;class#MainLayoutController#0" expanded="false" />
                 <element signature="method#inicializeComboBox#0;class#MainLayoutController#0" expanded="false" />
                 <element signature="method#initialize#0;class#MainLayoutController#0" expanded="false" />
+                <element signature="method#moveFileToSicaenFilePath#0;class#MainLayoutController#0" expanded="false" />
+                <element signature="method#clearFields#0;class#MainLayoutController#0" expanded="false" />
                 <element signature="method#addEncontrista#0;class#MainLayoutController#0" expanded="false" />
                 <element signature="method#openChooserDialog#0;class#MainLayoutController#0" expanded="false" />
                 <element signature="method#setSaudeSimCheckBox#0;class#MainLayoutController#0" expanded="false" />
@@ -55,16 +46,6 @@
                 <element signature="method#setAlimentarNaoCheckBox#0;class#MainLayoutController#0" expanded="false" />
                 <element signature="method#generatePdfAction#0;class#MainLayoutController#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PDFReport.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/pdf/PDFReport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="49" column="54" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -93,7 +74,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/Encontrista.java" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/EncontristaDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/MainLayout.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/util/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/util/DAOFactory.java" />
@@ -108,6 +88,8 @@
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/dialogMessages/DialogMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/pdf/PDFReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/requiredFieldsFxml/ComboBoxFill.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/MainLayout.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/requiredFieldsFxml/RequiredFields.java" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java" />
       </list>
     </option>
@@ -160,7 +142,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -281,67 +263,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="draw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sicaen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sicaen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Sicaen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sicaen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sicaen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sicaen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -372,6 +298,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pdf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,10 +366,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dialogMessages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -528,22 +454,10 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sicaen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dialogs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -553,9 +467,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imageProfile" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -1042,12 +957,16 @@
       <workItem from="1466439236663" duration="1855000" />
       <workItem from="1466458699659" duration="2288000" />
       <workItem from="1466606222873" duration="1189000" />
-      <workItem from="1466622190619" duration="682000" />
+      <workItem from="1466622190619" duration="3447000" />
+      <workItem from="1466629889704" duration="1413000" />
+      <workItem from="1466692625115" duration="1233000" />
+      <workItem from="1466793959786" duration="65000" />
+      <workItem from="1466822686243" duration="1927000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100096000" />
+    <option name="totallyTimeSpent" value="107499000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1064,14 +983,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35093167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1082,12 +999,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35093167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1113,13 +1032,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/dialogMessages/DialogMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/encontrista/Encontrista.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -1142,6 +1054,8 @@
             <element signature="method#close#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#inicializeComboBox#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#initialize#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#moveFileToSicaenFilePath#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#clearFields#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#addEncontrista#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#openChooserDialog#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#setSaudeSimCheckBox#0;class#MainLayoutController#0" expanded="false" />
@@ -1157,7 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1198,6 +1111,8 @@
             <element signature="method#close#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#inicializeComboBox#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#initialize#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#moveFileToSicaenFilePath#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#clearFields#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#addEncontrista#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#openChooserDialog#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#setSaudeSimCheckBox#0;class#MainLayoutController#0" expanded="false" />
@@ -1239,6 +1154,8 @@
             <element signature="method#close#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#inicializeComboBox#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#initialize#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#moveFileToSicaenFilePath#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#clearFields#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#addEncontrista#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#openChooserDialog#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#setSaudeSimCheckBox#0;class#MainLayoutController#0" expanded="false" />
@@ -1294,6 +1211,8 @@
             <element signature="method#close#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#inicializeComboBox#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#initialize#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#moveFileToSicaenFilePath#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#clearFields#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#addEncontrista#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#openChooserDialog#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#setSaudeSimCheckBox#0;class#MainLayoutController#0" expanded="false" />
@@ -1335,6 +1254,8 @@
             <element signature="method#close#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#inicializeComboBox#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#initialize#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#moveFileToSicaenFilePath#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#clearFields#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#addEncontrista#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#openChooserDialog#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#setSaudeSimCheckBox#0;class#MainLayoutController#0" expanded="false" />
@@ -1376,6 +1297,8 @@
             <element signature="method#close#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#inicializeComboBox#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#initialize#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#moveFileToSicaenFilePath#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#clearFields#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#addEncontrista#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#openChooserDialog#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#setSaudeSimCheckBox#0;class#MainLayoutController#0" expanded="false" />
@@ -1440,16 +1363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainLayout.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/util/DAOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1504,7 +1417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1512,7 +1424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1520,7 +1431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1528,7 +1438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1536,18 +1445,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
           <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/pdf/PDFReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="49" column="54" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="93" column="56" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/requiredFieldsFxml/RequiredFields.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="137" column="48" selection-start-line="137" selection-start-column="48" selection-end-line="137" selection-end-column="48" />
+        <state relative-caret-position="191">
+          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
           <folding>
             <element signature="method#close#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#inicializeComboBox#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#initialize#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#moveFileToSicaenFilePath#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#clearFields#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#addEncontrista#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#openChooserDialog#0;class#MainLayoutController#0" expanded="false" />
             <element signature="method#setSaudeSimCheckBox#0;class#MainLayoutController#0" expanded="false" />
@@ -1559,24 +1495,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/pdf/PDFReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="49" column="54" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Sicaen</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1584,7 +1514,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Hibernate</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1619,11 +1549,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate|Sicaen</last-edited>
+          <last-edited>Sicaen</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
