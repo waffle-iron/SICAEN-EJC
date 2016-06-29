@@ -43,11 +43,11 @@ public class PDFReport {
                 logoSantaLuzia.setAlignment(Element.ALIGN_RIGHT);
                 doc.add(logoSantaLuzia);*/
 
-                Paragraph titulo = new Paragraph("Paróquia de Santa Luzia");
+                Paragraph titulo = new Paragraph("Paróquia Nossa Senhora do Rosário");
                 titulo.setAlignment(Element.ALIGN_CENTER);
                 doc.add(titulo);
 
-                Paragraph section = new Paragraph("VI EJC");
+                Paragraph section = new Paragraph("XIV EJC");
                 section.setAlignment(Element.ALIGN_CENTER);
                 doc.add(section);
 
@@ -58,13 +58,15 @@ public class PDFReport {
                 profileImage.setAbsolutePosition(400f, 650f);
                 doc.add(profileImage);*/
 
-                File img = new File(en.getImagemPerfil());
-                InputStream is = new FileInputStream(img);
-                byte[] imgproff = IOUtils.toByteArray(is);
-                Image profile = Image.getInstance(imgproff);
-                profile.scaleAbsolute(124f, 142f); //Tamanho da imagem
-                profile.setAbsolutePosition(430f, 630f); // posição da imagem
-                doc.add(profile);
+                if(en.getImagemPerfil() != null) {
+                    File img = new File(en.getImagemPerfil());
+                    InputStream is = new FileInputStream(img);
+                    byte[] imgproff = IOUtils.toByteArray(is);
+                    Image profile = Image.getInstance(imgproff);
+                    profile.scaleAbsolute(124f, 142f); //Tamanho da imagem
+                    profile.setAbsolutePosition(430f, 630f); // posição da imagem
+                    doc.add(profile);
+                }
 
                 section = new Paragraph("Nome: "+en.getNome());
                 doc.add(section);

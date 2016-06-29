@@ -1,6 +1,5 @@
 package staLuzia.Sicaen.controllers;
 
-import com.itextpdf.text.DocumentException;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -17,8 +16,6 @@ import staLuzia.Sicaen.models.pdf.PDFReport;
 
 import java.io.*;
 import java.net.URL;
-import java.time.LocalDate;
-import java.util.List;
 import java.util.ResourceBundle;
 
 /**
@@ -28,7 +25,7 @@ public class MainLayoutController implements Initializable{
 
     // VARIÁVEIS LOCAIS
     private static EncontristaRepositorio repositorio;
-    private String imagePerfilURL;
+    private String imagePerfilURL = null;
 
     // VARIÁVEIS IDENTIFICADORES DO LAYOUT
     @FXML private ComboBox<String> pgtComboBox;
@@ -127,6 +124,7 @@ public class MainLayoutController implements Initializable{
     }
 
     private void clearFields(){
+        this.imagePerfilURL = null;
         this.nomeTextField.setText("");
         this.apelidoTextField.setText("");
         this.celularTextField.setText("");
@@ -158,57 +156,63 @@ public class MainLayoutController implements Initializable{
     // Métodos onde a view os chamam diretamente, através de ações
 
     @FXML public void addEncontrista(){
+
         Encontrista encontrista = new Encontrista();
 
         encontrista.setPgtInscricao(pgtComboBox.getValue());
         encontrista.setNome(nomeTextField.getText());
         encontrista.setApelido(apelidoTextField.getText());
-		encontrista.setRelacionamento(relacionamentoComboBox.getValue());
-		encontrista.setDataNascimento(String.valueOf(dtNascimentoDataPicker.getValue()));
-		encontrista.setCelular(celularTextField.getText());
+        encontrista.setRelacionamento(relacionamentoComboBox.getValue());
+        encontrista.setDataNascimento(String.valueOf(dtNascimentoDataPicker.getValue()));
+        encontrista.setCelular(celularTextField.getText());
 
-		if(whatsappCheck.isSelected()){
-			encontrista.setWhatsapp(whatsappTextField.getText());
-		}else{
-			encontrista.setWhatsapp(celularTextField.getText());
-		}
+        if (whatsappCheck.isSelected()) {
+            encontrista.setWhatsapp(whatsappTextField.getText());
+        } else {
+            encontrista.setWhatsapp(celularTextField.getText());
+        }
 
-		encontrista.setNomeResponsavel1(responsavel1TextField.getText());
-		encontrista.setTelefoneResponsavel1(telefoneResp1TextField.getText());
-		encontrista.setNomeResponsavel2(responsavel2TextField.getText());
-		encontrista.setTelefoneResponsavel2(telefoneResp2TextField.getText());
+        encontrista.setNomeResponsavel1(responsavel1TextField.getText());
+        encontrista.setTelefoneResponsavel1(telefoneResp1TextField.getText());
+        encontrista.setNomeResponsavel2(responsavel2TextField.getText());
+        encontrista.setTelefoneResponsavel2(telefoneResp2TextField.getText());
 
-		encontrista.setEmail(emailTextField.getText());
-		encontrista.setTamanhoCamisa(tamanhoCamisaComboBox.getValue());
+        encontrista.setEmail(emailTextField.getText());
+        encontrista.setTamanhoCamisa(tamanhoCamisaComboBox.getValue());
 
-		if(saudeSimCheckBox.isSelected()){
-			encontrista.setProblemaSaude(problemaSaudeTextArea.getText());
-		}else{
-			encontrista.setProblemaSaude(null);
-		}
+        if (saudeSimCheckBox.isSelected()) {
+            encontrista.setProblemaSaude(problemaSaudeTextArea.getText());
+        } else {
+            encontrista.setProblemaSaude(null);
+        }
 
-		if(alimentarSimCheckBox.isSelected()){
-			encontrista.setProblemaAlimentar(problemaAlimentarTextArea.getText());
-		}else{
-			encontrista.setProblemaAlimentar(null);
-		}
+        if (alimentarSimCheckBox.isSelected()) {
+            encontrista.setProblemaAlimentar(problemaAlimentarTextArea.getText());
+        } else {
+            encontrista.setProblemaAlimentar(null);
+        }
 
-		encontrista.setEndereco(enderecoTextField.getText());
-		encontrista.setComplemento(complementoTextField.getText());
-		encontrista.setCep(cepTextField.getText());
-		encontrista.setBairro(bairroTextField.getText());
-		//encontrista.setReferencia();
+        encontrista.setEndereco(enderecoTextField.getText());
+        encontrista.setComplemento(complementoTextField.getText());
+        encontrista.setCep(cepTextField.getText());
+        encontrista.setBairro(bairroTextField.getText());
+        //encontrista.setReferencia();
 
-		encontrista.setReligiao(religiaoComboBox.getValue());
-		encontrista.setParoquia(paroquiaTextField.getText());
-		encontrista.setSacramento(sacramentoComboBox.getValue());
+        encontrista.setReligiao(religiaoComboBox.getValue());
+        encontrista.setParoquia(paroquiaTextField.getText());
+        encontrista.setSacramento(sacramentoComboBox.getValue());
 
-        encontrista.setImagemPerfil(this.imagePerfilURL);
+        if(imagePerfilURL != null){
+            encontrista.setImagemPerfil(this.imagePerfilURL);
+        }else {
+            encontrista.setImagemPerfil(null);
+        }
 
         this.repositorio = new EncontristaRepositorio();
         this.repositorio.add(encontrista);
         AlertDialog.showInformationDialog(DialogMessage.ADDED_SUCCESSFULLY_TITLE, DialogMessage.ADDED_SUCCESSFULLY_HEAD);
         clearFields(); // Limpa todos os campos após acadastro
+
     }
 
     @FXML public void openChooserDialog(){

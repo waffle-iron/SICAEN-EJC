@@ -28,9 +28,9 @@
     <items>
         <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="97.0" prefWidth="739.0" SplitPane.resizableWithParent="false">
             <children>
-                <ImageView fitHeight="66.0" fitWidth="63.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="84.0" fitWidth="80.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../draw/logoEmmanuel.png" />
+                        <Image url="@../draw/pina.png" />
                     </image>
                 </ImageView>
                 <Label layoutX="85.0" layoutY="32.0" text="Encontro de Jovens com Cristo">
@@ -38,7 +38,7 @@
                         <Font name="System Bold" size="21.0" />
                     </font>
                 </Label>
-                <Label layoutX="275.0" layoutY="55.0" text="Santa Luzia - Estância" />
+                <Label layoutX="260.0" layoutY="55.0" text="N. Sra. do Rosário - Pina" />
                 <TitledPane animated="false" layoutX="214.0" layoutY="-103.0" text="untitled" />
                 <MenuBar layoutY="-2.0" prefHeight="25.0" prefWidth="739.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <menus>
