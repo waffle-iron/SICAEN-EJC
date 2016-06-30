@@ -25,6 +25,7 @@ public class MainApp extends Application{
 
         stage.setTitle("Sistema de Cadastro de Encontristas - EJC");
         stage.setScene(scene);
+
         stage.setResizable(false);
         stage.show();
 

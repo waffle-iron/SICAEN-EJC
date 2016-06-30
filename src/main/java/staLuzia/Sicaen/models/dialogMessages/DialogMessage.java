@@ -19,7 +19,13 @@ public enum DialogMessage {
     ERROR_DOCUMENT_EXCEPTION_HEAD("Erro ao gerar Relatorio!"),
 
     DOCUMENT_GENERATED_TITLE("Relatorios Gerados!"),
-    DOCUMENT_GENERATED_HEAD("Foram gerados os relatórios de todos os encontristas");
+    DOCUMENT_GENERATED_HEAD("Foram gerados os relatórios de todos os encontristas"),
+
+    ABOUT_TITLE("About"),
+    ABOUT_HEAD("Developed by Henrique Dreyer " +
+            "\nContact: henriquedreyer@gmail.com " +
+            "\n\nAtribuição-NãoComercial\n" +
+            "CC BY-NC ");
 
     private final String message;
 

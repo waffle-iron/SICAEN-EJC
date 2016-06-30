@@ -77,7 +77,7 @@ public class PDFReport {
                 section = new Paragraph("Relacionamento: "+en.getRelacionamento());
                 doc.add(section);
 
-                section = new Paragraph("Nascimento: "+en.getDataNascimento().toString());
+                section = new Paragraph("Nascimento: "+en.getDataNascimento());
                 doc.add(section);
 
                 section = new Paragraph("Celular: "+en.getCelular());
