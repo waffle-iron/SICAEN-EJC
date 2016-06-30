@@ -23,7 +23,7 @@ public enum DialogMessage {
 
     ABOUT_TITLE("About"),
     ABOUT_HEAD("Developed by Henrique Dreyer " +
-            "\nContact: henriquedreyer@gmail.com " +
+            "\nhenriquedreyer@gmail.com " +
             "\n\nAtribuição-NãoComercial\n" +
             "CC BY-NC ");
 

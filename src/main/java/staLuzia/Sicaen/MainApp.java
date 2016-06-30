@@ -6,6 +6,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import staLuzia.Sicaen.controllers.MainLayoutController;
@@ -24,6 +25,7 @@ public class MainApp extends Application{
         scene.getStylesheets().add("/css/Styles.css");
 
         stage.setTitle("Sistema de Cadastro de Encontristas - EJC");
+        stage.getIcons().add(new Image("draw/church.png"));
         stage.setScene(scene);
 
         stage.setResizable(false);
