@@ -284,4 +284,5 @@ public class MainLayoutController implements Initializable{
     @FXML public void about(){
         AlertDialog.showInformationDialog(DialogMessage.ABOUT_TITLE, DialogMessage.ABOUT_HEAD);
     }
+    
 }
