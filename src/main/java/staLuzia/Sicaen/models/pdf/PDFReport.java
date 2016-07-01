@@ -43,11 +43,11 @@ public class PDFReport {
                 logoSantaLuzia.setAlignment(Element.ALIGN_RIGHT);
                 doc.add(logoSantaLuzia);*/
 
-                Paragraph titulo = new Paragraph("Paróquia Nossa Senhora do Rosário");
+                Paragraph titulo = new Paragraph("Paróquia de Santa Luzia");
                 titulo.setAlignment(Element.ALIGN_CENTER);
                 doc.add(titulo);
 
-                Paragraph section = new Paragraph("XIV EJC");
+                Paragraph section = new Paragraph("VI EJC");
                 section.setAlignment(Element.ALIGN_CENTER);
                 doc.add(section);
 

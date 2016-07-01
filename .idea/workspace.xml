@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="28e829db-7f23-4b5e-85a5-5c0574eaa995" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java" afterPath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/pdf/PDFReport.java" afterPath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/pdf/PDFReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/MainLayout.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/MainLayout.fxml" />
     </list>
     <ignored path="Sicaen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +31,8 @@
       <file leaf-file-name="MainLayoutController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="286" column="4" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="4" />
+            <state relative-caret-position="-132">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#close#0;class#MainLayoutController#0" expanded="false" />
@@ -60,26 +62,6 @@
                 <element signature="e#1003#1223#0" expanded="true" />
                 <element signature="e#1222#1223#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlertDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/dialogs/AlertDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DialogMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/dialogMessages/DialogMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -122,10 +104,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/fxml/MainLayout.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/requiredFieldsFxml/RequiredFields.java" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/validation/Validate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/pdf/PDFReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/dialogMessages/DialogMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/pdf/PDFReport.java" />
       </list>
     </option>
   </component>
@@ -972,12 +954,12 @@
       <workItem from="1467216884972" duration="1322000" />
       <workItem from="1467228669102" duration="561000" />
       <workItem from="1467257991676" duration="1397000" />
-      <workItem from="1467326509151" duration="3159000" />
+      <workItem from="1467326509151" duration="4144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128219000" />
+    <option name="totallyTimeSpent" value="129204000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -989,7 +971,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1421,14 +1403,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/requiredFieldsFxml/RequiredFields.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/validation/Validate.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/dialogs/AlertDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/encontrista/EncontristaDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1464,18 +1438,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/pdf/PDFReport.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/dialogMessages/DialogMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="76" column="83" selection-start-line="76" selection-start-column="83" selection-end-line="76" selection-end-column="83" />
+        <state relative-caret-position="482">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding>
+            <element signature="e#1018#1019#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/dialogs/AlertDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/dialogMessages/DialogMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/pdf/PDFReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        <state relative-caret-position="123">
+          <caret line="49" column="57" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -1493,8 +1477,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="286" column="4" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="4" />
+        <state relative-caret-position="-132">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#close#0;class#MainLayoutController#0" expanded="false" />
