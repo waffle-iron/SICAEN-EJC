@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Sicaen.jar" size="965537" download="eager" />
+    <jar href="Sicaen.jar" size="918316" download="eager" />
     <jar href="libs\antlr-2.7.7.jar" size="445288" download="eager" />
     <jar href="libs\commons-codec-1.10.jar" size="284184" download="eager" />
     <jar href="libs\dom4j-1.6.1.jar" size="313898" download="eager" />

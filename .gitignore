@@ -1,0 +1,19 @@
+# .GITIGNORE FILE
+# DEVELOPER: HENRIQUE DREYER
+# HENRIQUEDREYER[AT]GMAIL[DOT]COM
+
+#all compiled files
+out/
+
+#folders imageProfile and relatorio used for test
+imageProfile/
+relatorio/
+
+#the generated db used for test
+*.mv
+
+#java compiled class
+*.class
+
+#external executebles
+*.exe
