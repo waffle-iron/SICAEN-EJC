@@ -290,6 +290,7 @@ public class MainLayoutController implements Initializable{
             this.whatsappTextField.setEditable(true);
         }else{
             this.whatsappTextField.setText(this.celularTextField.getText());
+            this.whatsappTextField.setEditable(false);
         }
     }
 }

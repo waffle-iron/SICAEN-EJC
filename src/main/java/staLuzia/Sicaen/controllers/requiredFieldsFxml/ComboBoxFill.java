@@ -17,7 +17,7 @@ public class ComboBoxFill {
 
     public static ObservableList<String> fillTshirSizeComboBox(){
         ObservableList<String> size = FXCollections.observableArrayList(
-                "PP","P","M","G","GG"
+                "PP","P","M","G","GG","XG"
         );
         return size;
     }

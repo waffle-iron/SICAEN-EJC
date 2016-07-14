@@ -128,7 +128,7 @@
                                                     </padding>
                                                 </Label>
                                                 <TextField fx:id="celularTextField" maxWidth="-Infinity" prefHeight="25.0" prefWidth="149.0" promptText="(81)998101077" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                                <CheckBox fx:id="whatsappCheck" ellipsisString="" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                <CheckBox fx:id="whatsappCheck" ellipsisString="" mnemonicParsing="false" onAction="#setWhatsappCheck" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                                                 <Label text="WhatsApp:" GridPane.columnIndex="3" GridPane.rowIndex="3">
                                                     <GridPane.margin>
                                                         <Insets left="10.0" />
