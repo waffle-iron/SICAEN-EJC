@@ -20,13 +20,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Sicaen/libs/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Sicaen/libs/poi-3.14.jar" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Sicaen/libs/xml-apis-1.0.b2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/draw/1434953002_Angel_Wing.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/draw/cam.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/draw/comons.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/controllers/MainLayoutController.class" afterPath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/controllers/MainLayoutController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/models/pdf/PDFReport.class" afterPath="$PROJECT_DIR$/target/classes/staLuzia/Sicaen/models/pdf/PDFReport.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/fxml/MainLayout.fxml" afterPath="$PROJECT_DIR$/target/classes/fxml/MainLayout.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java" afterPath="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java" />
     </list>
     <ignored path="Sicaen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,8 +48,8 @@
       <file leaf-file-name="MainLayoutController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="378">
+              <caret line="287" column="22" selection-start-line="287" selection-start-column="22" selection-end-line="287" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#close#0;class#MainLayoutController#0" expanded="false" />
@@ -125,8 +120,8 @@
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/validation/Validate.java" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/dialogMessages/DialogMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/MainApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java" />
         <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/models/pdf/PDFReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java" />
       </list>
     </option>
   </component>
@@ -178,7 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
@@ -461,6 +455,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -975,12 +970,13 @@
       <workItem from="1467257991676" duration="1397000" />
       <workItem from="1467326509151" duration="5239000" />
       <workItem from="1467848951643" duration="937000" />
-      <workItem from="1468342450317" duration="893000" />
+      <workItem from="1468342450317" duration="1519000" />
+      <workItem from="1468459135653" duration="351000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132129000" />
+    <option name="totallyTimeSpent" value="133106000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -993,7 +989,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1004,12 +1000,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35093167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35093167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24816984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24816984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1451,7 +1447,7 @@
         <state relative-caret-position="482">
           <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
           <folding>
-            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1481,8 +1477,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/staLuzia/Sicaen/controllers/MainLayoutController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="378">
+          <caret line="287" column="22" selection-start-line="287" selection-start-column="22" selection-end-line="287" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#close#0;class#MainLayoutController#0" expanded="false" />
