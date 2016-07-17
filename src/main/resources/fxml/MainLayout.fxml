@@ -134,7 +134,7 @@
                                                         <Insets left="10.0" />
                                                     </GridPane.margin>
                                                 </Label>
-                                                <TextField fx:id="whatsappTextField" editable="false" promptText="(81)990101077" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                <TextField fx:id="whatsappTextField" promptText="(81)990101077" GridPane.columnIndex="4" GridPane.rowIndex="3">
                                                     <GridPane.margin>
                                                         <Insets right="5.0" />
                                                     </GridPane.margin></TextField>

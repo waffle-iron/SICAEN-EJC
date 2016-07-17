@@ -92,7 +92,7 @@ public class MainLayoutController implements Initializable{
     // Inicialização da View
     public void initialize(URL location, ResourceBundle resources) {
         inicializeComboBox();
-        setWhatsappCheck();
+        //setWhatsappCheck();
 
     }
 
@@ -287,10 +287,11 @@ public class MainLayoutController implements Initializable{
 
     @FXML public void setWhatsappCheck(){
         if(this.whatsappCheck.isSelected()){
-            this.whatsappTextField.setEditable(true);
-        }else{
-            this.whatsappTextField.setText(this.celularTextField.getText());
             this.whatsappTextField.setEditable(false);
+            this.whatsappTextField.setText(this.celularTextField.getText());
+        }else{
+            this.whatsappTextField.setEditable(true);
+            this.whatsappTextField.setText("");
         }
     }
 }
