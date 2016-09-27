@@ -68,6 +68,12 @@ public class PDFReport {
                     doc.add(profile);
                 }
 
+                section = new Paragraph("Pagamento: "+en.getPgtInscricao());
+                doc.add(section);
+
+                section = new Paragraph("Tamanho Camisa: "+en.getTamanhoCamisa());
+                doc.add(section);
+
                 section = new Paragraph("Nome: "+en.getNome());
                 doc.add(section);
 
